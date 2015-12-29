@@ -23,7 +23,7 @@ module MWS
       def list_inventory_supply(opts = {})
         operation('ListInventorySupply')
           .add(opts)
-          .structure!('SellerSkus', 'member')
+          .structure!('SellerSkus', 'Member')
 
         run
       end
